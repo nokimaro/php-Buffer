@@ -1,6 +1,6 @@
 {
-    "name": "kryuu-common/base58",
-    "description": "Base58 Encoding and Decoding Library for PHP",
+    "name": "kryuu-common/buffer",
+    "description": "Buffer controller for multiple types of conversions like Base64 and Base58",
     "repositories": [ 
         { "type": "composer", "url": "https://composer.git.ryuu.technology/packages/php/" }
     ],
@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "KryuuCommon\\Base58\\": "src/"
+            "KryuuCommon\\Buffer\\": "src/"
         }
     }
 }
