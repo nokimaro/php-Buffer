@@ -1,0 +1,19 @@
+{
+    "name": "kryuu-common/base58",
+    "description": "Base58 Encoding and Decoding Library for PHP",
+    "repositories": [ 
+        { "type": "composer", "url": "https://composer.git.ryuu.technology/packages/php/" }
+    ],
+    "require": {
+        "kryuu-common/base58": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KryuuCommon\\Base58\\": "src/"
+        }
+    }
+}
