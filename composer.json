@@ -4,6 +4,8 @@
     "repositories": [ 
         { "type": "composer", "url": "https://composer.git.ryuu.technology/packages/php/" }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "kryuu-common/base58": "dev-master"
     },
