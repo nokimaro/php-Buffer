@@ -53,7 +53,7 @@ class Buffer {
         return $this;
     }
     
-    public function toString($type) {
+    public function toString($type = null) {
         switch($type):
             case 'base64':
                 return base64_encode($this->from);
