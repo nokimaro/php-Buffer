@@ -6,6 +6,8 @@
  * and open the template in the editor.
  */
 
+namespace KryuuCommon\Buffer\Entity;
+
 /**
  * Description of KeyPair
  *

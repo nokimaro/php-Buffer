@@ -11,6 +11,7 @@ namespace KryuuCommon\Buffer;
 use Zend\Crypt\PublicKey\RsaOptions;
 use KryuuCommon\Base58\Base58;
 use KryuuCommon\Buffer\Exception\WrongResultValueException;
+use KryuuCommon\Buffer\Entity\KeyPair;
 
 
 
