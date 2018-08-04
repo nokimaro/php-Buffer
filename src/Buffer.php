@@ -68,10 +68,10 @@ class Buffer {
             case 'base58_ed25519':
             default:
                 $keys = $this->toEd25519();
-                return [
-                    'publicKey' => $this->base58($keys['publicKey']),
-                    'secretKey' => $this->base58($keys['secretKey']),
-                ];
+                
+                return (new KeyPair)
+                    ->setPublic($this->base58($keys['publicKey']))
+                    ->setPrivate($this->base58($keys['secretKey']));
         }
     }
     
