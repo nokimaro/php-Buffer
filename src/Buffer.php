@@ -63,7 +63,7 @@ class Buffer {
         endswitch;
     }
     
-    public function toKeypair($type) {
+    public function toKeypair($type = null) {
         switch($type) {
             case 'base58_ed25519':
             default:
@@ -89,7 +89,7 @@ class Buffer {
      * @property {string} privateKey
      */
     private function toEd25519() {
-        $keyPair = $this->from ? sodium_crypto_sign_seed_keypair
+        $keyPair = $this->from ? sodium_crypto_sign_seed_keypair($this->from)
                 :sodium_crypto_sign_seed_keypair(sodium_crypto_secretbox_keygen());
         $keyPairHex = unpack('H*', $keyPair);
 
